@@ -1,0 +1,92 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_DB: creditcardloan
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      
+      redis:
+        image: redis:7
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Run backend tests
+      run: |
+        dotnet test --collect:"XPlat Code Coverage" --results-directory ./coverage
+        dotnet tool install -g dotnet-reportgenerator-globaltool
+        reportgenerator -reports:"./coverage/**/coverage.cobertura.xml" -targetdir:"./coverage/report" -reporttypes:Html
+
+    - name: Install frontend dependencies
+      run: |
+        cd src/CreditCardLoan.Web
+        npm install
+
+    - name: Run frontend tests
+      run: |
+        cd src/CreditCardLoan.Web
+        npm test -- --coverage
+
+    - name: Run E2E tests
+      run: |
+        cd tests/CreditCardLoan.E2ETests
+        dotnet test --logger "trx;LogFileName=test-results.trx"
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: |
+          coverage/report
+          src/CreditCardLoan.Web/coverage
+          tests/CreditCardLoan.E2ETests/TestResults
+
+    - name: Build and push Docker images
+      if: github.ref == 'refs/heads/main'
+      run: |
+        docker build -t creditcardloan-api ./src/CreditCardLoan.API
+        docker build -t creditcardloan-web ./src/CreditCardLoan.Web
+        # Add Docker push commands here when registry is configured 

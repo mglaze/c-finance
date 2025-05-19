@@ -1,0 +1,17 @@
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/bin/Debug/net9.0/CreditCardLoan.Infrastructure.deps.json
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/bin/Debug/net9.0/CreditCardLoan.Infrastructure.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/bin/Debug/net9.0/CreditCardLoan.Infrastructure.pdb
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/bin/Debug/net9.0/CreditCardLoan.Core.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/bin/Debug/net9.0/CreditCardLoan.Core.pdb
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.csproj.AssemblyReference.cache
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.AssemblyInfoInputs.cache
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.AssemblyInfo.cs
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCa.BF34F7BD.Up2Date
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/refint/CreditCardLoan.Infrastructure.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.pdb
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/ref/CreditCardLoan.Infrastructure.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/bin/Debug/net9.0/CreditCardLoan.Infrastructure.runtimeconfig.json
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.genruntimeconfig.cache

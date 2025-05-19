@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="d901b8fe-cafd-44df-8aff-a4d82a49fafb" name="@Michaelas-MacBook-Pro 2025-05-19 12:53:26" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-05-19T12:53:26.5231630-04:00" queuing="2025-05-19T12:53:26.5231630-04:00" start="2025-05-19T12:53:23.1828780-04:00" finish="2025-05-19T12:53:26.9687990-04:00" />
+  <TestSettings name="default" id="1dd5b90c-271e-4ea7-996b-15b08327e79a">
+    <Deployment runDeploymentRoot="_Michaelas-MacBook-Pro_2025-05-19_12_53_26" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="46c8b246-4206-4bb5-b2f5-4b7d07ea7e71" testId="1928fba8-89c0-c8f3-64b1-d016e9f7c636" testName="CreditCardLoan.UnitTests.Services.LoanServiceTests.UpdateLoanAsync_WithValidLoan_UpdatesLoan" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0337676" startTime="2025-05-19T12:53:26.3711280-04:00" endTime="2025-05-19T12:53:26.3711280-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46c8b246-4206-4bb5-b2f5-4b7d07ea7e71" />
+    <UnitTestResult executionId="65f7b88d-27b2-45c2-a6a6-f98b224d73ab" testId="4de0552f-27a1-f309-0150-9e37c07cb616" testName="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.UpdateLoan_WithMismatchedId_ReturnsBadRequest" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0056334" startTime="2025-05-19T12:53:26.3367330-04:00" endTime="2025-05-19T12:53:26.3367330-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65f7b88d-27b2-45c2-a6a6-f98b224d73ab" />
+    <UnitTestResult executionId="660a9037-017c-433d-b692-9bbc866a0a61" testId="58edf7fc-c47a-e429-6f50-a281cf3e8e83" testName="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.GetLoan_WithValidId_ReturnsOkResult_WithLoan" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0024174" startTime="2025-05-19T12:53:26.4911090-04:00" endTime="2025-05-19T12:53:26.4911090-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="660a9037-017c-433d-b692-9bbc866a0a61" />
+    <UnitTestResult executionId="216857ff-8b71-4942-9426-20aeeddae96c" testId="89c2f494-b7af-1013-64c7-87421ccac296" testName="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.GetLoan_WithInvalidId_ReturnsNotFound" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0063634" startTime="2025-05-19T12:53:26.3719870-04:00" endTime="2025-05-19T12:53:26.3719870-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="216857ff-8b71-4942-9426-20aeeddae96c" />
+    <UnitTestResult executionId="1d379861-e0e3-49bd-9685-0da27911cd11" testId="4efa8bf7-c45b-74cd-d64b-7b257f8c9a76" testName="CreditCardLoan.UnitTests.UnitTest1.Test1" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0079098" startTime="2025-05-19T12:53:26.1828470-04:00" endTime="2025-05-19T12:53:26.1828990-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d379861-e0e3-49bd-9685-0da27911cd11" />
+    <UnitTestResult executionId="93dc94a1-2af6-4c15-8326-8dd13e0a81eb" testId="af3dec95-cd2e-0984-e2f0-872692ef1929" testName="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.GetLoans_ReturnsOkResult_WithListOfLoans" computerName="Michaelas-MacBook-Pro" duration="00:00:00.1164172" startTime="2025-05-19T12:53:26.4885280-04:00" endTime="2025-05-19T12:53:26.4885280-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93dc94a1-2af6-4c15-8326-8dd13e0a81eb" />
+    <UnitTestResult executionId="364335d6-1da0-440b-a205-1cf7ff47ec81" testId="125f6e00-a96e-7d5f-2c57-659f5137770b" testName="CreditCardLoan.UnitTests.Services.LoanServiceTests.CreateLoanAsync_WithValidLoan_CreatesAndReturnsLoan" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0050023" startTime="2025-05-19T12:53:26.4399200-04:00" endTime="2025-05-19T12:53:26.4399200-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="364335d6-1da0-440b-a205-1cf7ff47ec81" />
+    <UnitTestResult executionId="907dbfdc-7e54-4cef-b06c-81ba4da3b760" testId="557b6633-a4fe-ed5c-f7b0-6fe8314f9ccb" testName="CreditCardLoan.UnitTests.Services.LoanServiceTests.UpdateLoanAsync_WithNonExistentLoan_ThrowsValidationException" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0030492" startTime="2025-05-19T12:53:26.4421080-04:00" endTime="2025-05-19T12:53:26.4421090-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="907dbfdc-7e54-4cef-b06c-81ba4da3b760" />
+    <UnitTestResult executionId="c27a44d3-8d54-4050-bc98-31d7b5a7c011" testId="9cca5893-1913-4648-7889-2e1407a682f4" testName="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.DeleteLoan_WithValidId_ReturnsNoContent" computerName="Michaelas-MacBook-Pro" duration="00:00:00.1939824" startTime="2025-05-19T12:53:26.3274890-04:00" endTime="2025-05-19T12:53:26.3276200-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c27a44d3-8d54-4050-bc98-31d7b5a7c011" />
+    <UnitTestResult executionId="9c55fc3e-095f-4f17-9724-793832cdeae8" testId="5dae83de-286e-dbbb-86b2-b2f7072c81ea" testName="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.UpdateLoan_WithValidLoan_ReturnsNoContent" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0168512" startTime="2025-05-19T12:53:26.3537790-04:00" endTime="2025-05-19T12:53:26.3537800-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c55fc3e-095f-4f17-9724-793832cdeae8" />
+    <UnitTestResult executionId="19ee2c8f-6ddd-4736-aea5-b0324b676964" testId="8155505d-3507-b544-6475-db8c45941dcb" testName="CreditCardLoan.UnitTests.Services.LoanServiceTests.GetAllLoansAsync_ReturnsAllLoans" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0065996" startTime="2025-05-19T12:53:26.4423880-04:00" endTime="2025-05-19T12:53:26.4423880-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19ee2c8f-6ddd-4736-aea5-b0324b676964" />
+    <UnitTestResult executionId="ea0e475d-4e5d-4bde-ab0a-8580728f9ae5" testId="7dcf7c7a-0708-8a82-0ae0-fab0b0a8ae61" testName="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.CreateLoan_WithValidLoan_ReturnsCreatedAtAction" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0112720" startTime="2025-05-19T12:53:26.3654020-04:00" endTime="2025-05-19T12:53:26.3654020-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea0e475d-4e5d-4bde-ab0a-8580728f9ae5" />
+    <UnitTestResult executionId="e26fd869-a075-4191-b452-d48673f7f63a" testId="2e89052d-55c7-9d16-a1ff-e5b44f67758b" testName="CreditCardLoan.UnitTests.Services.LoanServiceTests.CreateLoanAsync_WithInvalidAmount_ThrowsValidationException" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0025458" startTime="2025-05-19T12:53:26.4411640-04:00" endTime="2025-05-19T12:53:26.4411640-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e26fd869-a075-4191-b452-d48673f7f63a" />
+    <UnitTestResult executionId="78f3ac9e-bd40-41cb-8d5c-910c5c0b6ef2" testId="9adee73e-7308-6697-bf24-8475a696f07c" testName="CreditCardLoan.UnitTests.Services.LoanServiceTests.DeleteLoanAsync_WithValidId_DeletesLoan" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0043943" startTime="2025-05-19T12:53:26.4418150-04:00" endTime="2025-05-19T12:53:26.4418150-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="78f3ac9e-bd40-41cb-8d5c-910c5c0b6ef2" />
+    <UnitTestResult executionId="7924f8b5-8e12-4b28-860f-a977289d15a6" testId="509bc546-b8e5-25b4-36b5-580640f54038" testName="CreditCardLoan.UnitTests.Services.LoanServiceTests.CreateLoanAsync_WithInvalidInterestRate_ThrowsValidationException" computerName="Michaelas-MacBook-Pro" duration="00:00:00.2037142" startTime="2025-05-19T12:53:26.3382700-04:00" endTime="2025-05-19T12:53:26.3382710-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7924f8b5-8e12-4b28-860f-a977289d15a6" />
+    <UnitTestResult executionId="0ab8a855-797b-433e-b921-b78cf6dfbb4e" testId="6f8edd33-4340-1fa2-e509-60d2873d6df5" testName="CreditCardLoan.UnitTests.Services.LoanServiceTests.GetLoanByIdAsync_WithValidId_ReturnsLoan" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0029985" startTime="2025-05-19T12:53:26.4408390-04:00" endTime="2025-05-19T12:53:26.4408400-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ab8a855-797b-433e-b921-b78cf6dfbb4e" />
+    <UnitTestResult executionId="d895b53d-ffd8-42ca-81cf-2f21a27c463f" testId="235f1a31-0d7c-3de0-1c7d-3163b1f4591d" testName="CreditCardLoan.UnitTests.Services.LoanServiceTests.DeleteLoanAsync_WithNonExistentId_ThrowsValidationException" computerName="Michaelas-MacBook-Pro" duration="00:00:00.0027521" startTime="2025-05-19T12:53:26.4414610-04:00" endTime="2025-05-19T12:53:26.4414610-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d895b53d-ffd8-42ca-81cf-2f21a27c463f" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="CreditCardLoan.UnitTests.Services.LoanServiceTests.CreateLoanAsync_WithInvalidInterestRate_ThrowsValidationException" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="509bc546-b8e5-25b4-36b5-580640f54038">
+      <Execution id="7924f8b5-8e12-4b28-860f-a977289d15a6" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Services.LoanServiceTests" name="CreateLoanAsync_WithInvalidInterestRate_ThrowsValidationException" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Services.LoanServiceTests.CreateLoanAsync_WithInvalidAmount_ThrowsValidationException" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="2e89052d-55c7-9d16-a1ff-e5b44f67758b">
+      <Execution id="e26fd869-a075-4191-b452-d48673f7f63a" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Services.LoanServiceTests" name="CreateLoanAsync_WithInvalidAmount_ThrowsValidationException" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.GetLoans_ReturnsOkResult_WithListOfLoans" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="af3dec95-cd2e-0984-e2f0-872692ef1929">
+      <Execution id="93dc94a1-2af6-4c15-8326-8dd13e0a81eb" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Controllers.LoansControllerTests" name="GetLoans_ReturnsOkResult_WithListOfLoans" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Services.LoanServiceTests.CreateLoanAsync_WithValidLoan_CreatesAndReturnsLoan" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="125f6e00-a96e-7d5f-2c57-659f5137770b">
+      <Execution id="364335d6-1da0-440b-a205-1cf7ff47ec81" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Services.LoanServiceTests" name="CreateLoanAsync_WithValidLoan_CreatesAndReturnsLoan" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.DeleteLoan_WithValidId_ReturnsNoContent" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="9cca5893-1913-4648-7889-2e1407a682f4">
+      <Execution id="c27a44d3-8d54-4050-bc98-31d7b5a7c011" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Controllers.LoansControllerTests" name="DeleteLoan_WithValidId_ReturnsNoContent" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Services.LoanServiceTests.GetAllLoansAsync_ReturnsAllLoans" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="8155505d-3507-b544-6475-db8c45941dcb">
+      <Execution id="19ee2c8f-6ddd-4736-aea5-b0324b676964" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Services.LoanServiceTests" name="GetAllLoansAsync_ReturnsAllLoans" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Services.LoanServiceTests.DeleteLoanAsync_WithNonExistentId_ThrowsValidationException" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="235f1a31-0d7c-3de0-1c7d-3163b1f4591d">
+      <Execution id="d895b53d-ffd8-42ca-81cf-2f21a27c463f" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Services.LoanServiceTests" name="DeleteLoanAsync_WithNonExistentId_ThrowsValidationException" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.UpdateLoan_WithValidLoan_ReturnsNoContent" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="5dae83de-286e-dbbb-86b2-b2f7072c81ea">
+      <Execution id="9c55fc3e-095f-4f17-9724-793832cdeae8" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Controllers.LoansControllerTests" name="UpdateLoan_WithValidLoan_ReturnsNoContent" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.CreateLoan_WithValidLoan_ReturnsCreatedAtAction" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="7dcf7c7a-0708-8a82-0ae0-fab0b0a8ae61">
+      <Execution id="ea0e475d-4e5d-4bde-ab0a-8580728f9ae5" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Controllers.LoansControllerTests" name="CreateLoan_WithValidLoan_ReturnsCreatedAtAction" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Services.LoanServiceTests.UpdateLoanAsync_WithValidLoan_UpdatesLoan" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="1928fba8-89c0-c8f3-64b1-d016e9f7c636">
+      <Execution id="46c8b246-4206-4bb5-b2f5-4b7d07ea7e71" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Services.LoanServiceTests" name="UpdateLoanAsync_WithValidLoan_UpdatesLoan" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Services.LoanServiceTests.UpdateLoanAsync_WithNonExistentLoan_ThrowsValidationException" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="557b6633-a4fe-ed5c-f7b0-6fe8314f9ccb">
+      <Execution id="907dbfdc-7e54-4cef-b06c-81ba4da3b760" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Services.LoanServiceTests" name="UpdateLoanAsync_WithNonExistentLoan_ThrowsValidationException" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Services.LoanServiceTests.DeleteLoanAsync_WithValidId_DeletesLoan" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="9adee73e-7308-6697-bf24-8475a696f07c">
+      <Execution id="78f3ac9e-bd40-41cb-8d5c-910c5c0b6ef2" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Services.LoanServiceTests" name="DeleteLoanAsync_WithValidId_DeletesLoan" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.GetLoan_WithInvalidId_ReturnsNotFound" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="89c2f494-b7af-1013-64c7-87421ccac296">
+      <Execution id="216857ff-8b71-4942-9426-20aeeddae96c" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Controllers.LoansControllerTests" name="GetLoan_WithInvalidId_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.UpdateLoan_WithMismatchedId_ReturnsBadRequest" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="4de0552f-27a1-f309-0150-9e37c07cb616">
+      <Execution id="65f7b88d-27b2-45c2-a6a6-f98b224d73ab" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Controllers.LoansControllerTests" name="UpdateLoan_WithMismatchedId_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Controllers.LoansControllerTests.GetLoan_WithValidId_ReturnsOkResult_WithLoan" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="58edf7fc-c47a-e429-6f50-a281cf3e8e83">
+      <Execution id="660a9037-017c-433d-b692-9bbc866a0a61" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Controllers.LoansControllerTests" name="GetLoan_WithValidId_ReturnsOkResult_WithLoan" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.UnitTest1.Test1" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="4efa8bf7-c45b-74cd-d64b-7b257f8c9a76">
+      <Execution id="1d379861-e0e3-49bd-9685-0da27911cd11" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.UnitTest1" name="Test1" />
+    </UnitTest>
+    <UnitTest name="CreditCardLoan.UnitTests.Services.LoanServiceTests.GetLoanByIdAsync_WithValidId_ReturnsLoan" storage="/users/michaela/sites/interview/curae/tests/creditcardloan.unittests/bin/debug/net9.0/creditcardloan.unittests.dll" id="6f8edd33-4340-1fa2-e509-60d2873d6df5">
+      <Execution id="0ab8a855-797b-433e-b921-b78cf6dfbb4e" />
+      <TestMethod codeBase="/Users/michaela/Sites/interview/curae/tests/CreditCardLoan.UnitTests/bin/Debug/net9.0/CreditCardLoan.UnitTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="CreditCardLoan.UnitTests.Services.LoanServiceTests" name="GetLoanByIdAsync_WithValidId_ReturnsLoan" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="1928fba8-89c0-c8f3-64b1-d016e9f7c636" executionId="46c8b246-4206-4bb5-b2f5-4b7d07ea7e71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4de0552f-27a1-f309-0150-9e37c07cb616" executionId="65f7b88d-27b2-45c2-a6a6-f98b224d73ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="58edf7fc-c47a-e429-6f50-a281cf3e8e83" executionId="660a9037-017c-433d-b692-9bbc866a0a61" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="89c2f494-b7af-1013-64c7-87421ccac296" executionId="216857ff-8b71-4942-9426-20aeeddae96c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4efa8bf7-c45b-74cd-d64b-7b257f8c9a76" executionId="1d379861-e0e3-49bd-9685-0da27911cd11" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af3dec95-cd2e-0984-e2f0-872692ef1929" executionId="93dc94a1-2af6-4c15-8326-8dd13e0a81eb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="125f6e00-a96e-7d5f-2c57-659f5137770b" executionId="364335d6-1da0-440b-a205-1cf7ff47ec81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="557b6633-a4fe-ed5c-f7b0-6fe8314f9ccb" executionId="907dbfdc-7e54-4cef-b06c-81ba4da3b760" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9cca5893-1913-4648-7889-2e1407a682f4" executionId="c27a44d3-8d54-4050-bc98-31d7b5a7c011" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5dae83de-286e-dbbb-86b2-b2f7072c81ea" executionId="9c55fc3e-095f-4f17-9724-793832cdeae8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8155505d-3507-b544-6475-db8c45941dcb" executionId="19ee2c8f-6ddd-4736-aea5-b0324b676964" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7dcf7c7a-0708-8a82-0ae0-fab0b0a8ae61" executionId="ea0e475d-4e5d-4bde-ab0a-8580728f9ae5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e89052d-55c7-9d16-a1ff-e5b44f67758b" executionId="e26fd869-a075-4191-b452-d48673f7f63a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9adee73e-7308-6697-bf24-8475a696f07c" executionId="78f3ac9e-bd40-41cb-8d5c-910c5c0b6ef2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="509bc546-b8e5-25b4-36b5-580640f54038" executionId="7924f8b5-8e12-4b28-860f-a977289d15a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6f8edd33-4340-1fa2-e509-60d2873d6df5" executionId="0ab8a855-797b-433e-b921-b78cf6dfbb4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="235f1a31-0d7c-3de0-1c7d-3163b1f4591d" executionId="d895b53d-ffd8-42ca-81cf-2f21a27c463f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="17" executed="17" passed="17" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.8.2+699d445a1a (64-bit .NET 9.0.5)
+[xUnit.net 00:00:00.13]   Discovering: CreditCardLoan.UnitTests
+[xUnit.net 00:00:00.19]   Discovered:  CreditCardLoan.UnitTests
+[xUnit.net 00:00:00.20]   Starting:    CreditCardLoan.UnitTests
+[xUnit.net 00:00:00.64]   Finished:    CreditCardLoan.UnitTests
+</StdOut>
+    </Output>
+    <CollectorDataEntries>
+      <Collector agentName="Michaelas-MacBook-Pro" uri="datacollector://microsoft/CoverletCodeCoverage/1.0" collectorDisplayName="XPlat code coverage">
+        <UriAttachments>
+          <UriAttachment>
+            <A href="Michaelas-MacBook-Pro/coverage.cobertura.xml"></A>
+          </UriAttachment>
+        </UriAttachments>
+      </Collector>
+    </CollectorDataEntries>
+  </ResultSummary>
+</TestRun>

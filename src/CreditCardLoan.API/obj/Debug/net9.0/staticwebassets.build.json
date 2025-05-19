@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "KcSkOK6OQUVXfETO9zRD+2HImxbiiGpgD62i9nF8+a0=",
+  "Source": "CreditCardLoan.API",
+  "BasePath": "_content/CreditCardLoan.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

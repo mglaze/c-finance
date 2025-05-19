@@ -1,0 +1,11 @@
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/bin/Debug/net9.0/CreditCardLoan.Core.deps.json
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/bin/Debug/net9.0/CreditCardLoan.Core.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/bin/Debug/net9.0/CreditCardLoan.Core.pdb
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/CreditCardLoan.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/CreditCardLoan.Core.AssemblyInfoInputs.cache
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/CreditCardLoan.Core.AssemblyInfo.cs
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/CreditCardLoan.Core.csproj.CoreCompileInputs.cache
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/CreditCardLoan.Core.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/refint/CreditCardLoan.Core.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/CreditCardLoan.Core.pdb
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/ref/CreditCardLoan.Core.dll

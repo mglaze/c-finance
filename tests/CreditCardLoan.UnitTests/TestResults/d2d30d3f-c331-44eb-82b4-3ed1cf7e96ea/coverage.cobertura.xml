@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.3464" branch-rate="0.574" version="1.9" timestamp="1747673079" lines-covered="123" lines-valid="355" branches-covered="31" branches-valid="54">
+  <sources>
+    <source>/Users/michaela/Sites/interview/curae/src/</source>
+  </sources>
+  <packages>
+    <package name="CreditCardLoan.Core" line-rate="0.7894" branch-rate="1" complexity="15">
+      <classes>
+        <class name="CreditCardLoan.Core.Models.Loan" filename="CreditCardLoan.Core/Models/Loan.cs" line-rate="1" branch-rate="1" complexity="11">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="33" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CustomerName" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="42" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Amount" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="45" branch="False" />
+              </lines>
+            </method>
+            <method name="get_InterestRate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="43" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TermInMonths" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="46" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CreatedAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="23" branch="False" />
+              </lines>
+            </method>
+            <method name="get_UpdatedAt" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MonthlyPayment" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TotalPayment" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TotalInterest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="3" branch="False" />
+              </lines>
+            </method>
+            <method name="CalculateMonthlyPayment" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="9" branch="False" />
+                <line number="38" hits="9" branch="False" />
+                <line number="39" hits="9" branch="False" />
+                <line number="40" hits="9" branch="False" />
+                <line number="41" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="8" hits="33" branch="False" />
+            <line number="12" hits="42" branch="False" />
+            <line number="16" hits="45" branch="False" />
+            <line number="20" hits="43" branch="False" />
+            <line number="24" hits="46" branch="False" />
+            <line number="26" hits="23" branch="False" />
+            <line number="28" hits="6" branch="False" />
+            <line number="30" hits="9" branch="False" />
+            <line number="32" hits="6" branch="False" />
+            <line number="34" hits="3" branch="False" />
+            <line number="37" hits="9" branch="False" />
+            <line number="38" hits="9" branch="False" />
+            <line number="39" hits="9" branch="False" />
+            <line number="40" hits="9" branch="False" />
+            <line number="41" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Core.Interfaces.LoanStatistics" filename="CreditCardLoan.Core/Interfaces/ILoanService.cs" line-rate="0" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_TotalAmount" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_AverageAmount" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TotalInterest" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TotalLoans" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="CreditCardLoan.API" line-rate="0.5454" branch-rate="0.7272" complexity="25">
+      <classes>
+        <class name="Program" filename="CreditCardLoan.API/Program.cs" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name="&lt;Main&gt;$" signature="(System.String[])" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="11" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="144" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="305" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
+                <line number="67" hits="0" branch="False" />
+                <line number="68" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
+                <line number="71" hits="0" branch="False" />
+                <line number="72" hits="0" branch="False" />
+                <line number="73" hits="0" branch="False" />
+                <line number="74" hits="0" branch="False" />
+                <line number="75" hits="0" branch="False" />
+                <line number="76" hits="0" branch="False" />
+                <line number="77" hits="0" branch="False" />
+                <line number="78" hits="0" branch="False" />
+                <line number="79" hits="0" branch="False" />
+                <line number="80" hits="0" branch="False" />
+                <line number="82" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="144" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="55" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="305" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
+            <line number="67" hits="0" branch="False" />
+            <line number="68" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
+            <line number="71" hits="0" branch="False" />
+            <line number="72" hits="0" branch="False" />
+            <line number="73" hits="0" branch="False" />
+            <line number="74" hits="0" branch="False" />
+            <line number="75" hits="0" branch="False" />
+            <line number="76" hits="0" branch="False" />
+            <line number="77" hits="0" branch="False" />
+            <line number="78" hits="0" branch="False" />
+            <line number="79" hits="0" branch="False" />
+            <line number="80" hits="0" branch="False" />
+            <line number="82" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.API.Controllers.LoansController" filename="CreditCardLoan.API/Controllers/LoansController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(CreditCardLoan.Core.Interfaces.ILoanService,Microsoft.Extensions.Caching.Distributed.IDistributedCache)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="7" branch="False" />
+                <line number="19" hits="7" branch="False" />
+                <line number="20" hits="7" branch="False" />
+                <line number="21" hits="7" branch="False" />
+                <line number="22" hits="7" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="7" branch="False" />
+            <line number="19" hits="7" branch="False" />
+            <line number="20" hits="7" branch="False" />
+            <line number="21" hits="7" branch="False" />
+            <line number="22" hits="7" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.API.Controllers.LoansController/&lt;CreateLoan&gt;d__6" filename="CreditCardLoan.API/Controllers/LoansController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="84" hits="1" branch="False" />
+                <line number="85" hits="1" branch="False" />
+                <line number="86" hits="1" branch="False" />
+                <line number="87" hits="1" branch="False" />
+                <line number="88" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="84" hits="1" branch="False" />
+            <line number="85" hits="1" branch="False" />
+            <line number="86" hits="1" branch="False" />
+            <line number="87" hits="1" branch="False" />
+            <line number="88" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.API.Controllers.LoansController/&lt;DeleteLoan&gt;d__8" filename="CreditCardLoan.API/Controllers/LoansController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="105" hits="1" branch="False" />
+                <line number="106" hits="1" branch="False" />
+                <line number="107" hits="1" branch="False" />
+                <line number="108" hits="1" branch="False" />
+                <line number="109" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="105" hits="1" branch="False" />
+            <line number="106" hits="1" branch="False" />
+            <line number="107" hits="1" branch="False" />
+            <line number="108" hits="1" branch="False" />
+            <line number="109" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.API.Controllers.LoansController/&lt;GetLoan&gt;d__5" filename="CreditCardLoan.API/Controllers/LoansController.cs" line-rate="0.909" branch-rate="0.875" complexity="8">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.909" branch-rate="0.875" complexity="8">
+              <lines>
+                <line number="53" hits="2" branch="False" />
+                <line number="54" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="59" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="55" hits="2" branch="False" />
+                <line number="56" hits="2" branch="False" />
+                <line number="57" hits="2" branch="False" />
+                <line number="59" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="281" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="60" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="63" hits="2" branch="False" />
+                <line number="65" hits="2" branch="False" />
+                <line number="66" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="486" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="67" hits="1" branch="False" />
+                <line number="68" hits="1" branch="False" />
+                <line number="71" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="529" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="72" hits="1" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="77" hits="1" branch="False" />
+                <line number="79" hits="1" branch="False" />
+                <line number="80" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="53" hits="2" branch="False" />
+            <line number="54" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="59" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="55" hits="2" branch="False" />
+            <line number="56" hits="2" branch="False" />
+            <line number="57" hits="2" branch="False" />
+            <line number="59" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="281" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="60" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="63" hits="2" branch="False" />
+            <line number="65" hits="2" branch="False" />
+            <line number="66" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="486" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="67" hits="1" branch="False" />
+            <line number="68" hits="1" branch="False" />
+            <line number="71" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="529" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="72" hits="1" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="77" hits="1" branch="False" />
+            <line number="79" hits="1" branch="False" />
+            <line number="80" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.API.Controllers.LoansController/&lt;GetLoans&gt;d__4" filename="CreditCardLoan.API/Controllers/LoansController.cs" line-rate="0.8946999999999999" branch-rate="0.8332999999999999" complexity="6">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8946999999999999" branch-rate="0.8332999999999999" complexity="6">
+              <lines>
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="59" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="32" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="241" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="40" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="445" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="49" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="59" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="32" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="241" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="40" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="445" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="49" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.API.Controllers.LoansController/&lt;InvalidateCache&gt;d__9" filename="CreditCardLoan.API/Controllers/LoansController.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="112" hits="3" branch="False" />
+                <line number="113" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="31" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="114" hits="3" branch="False" />
+                <line number="115" hits="3" branch="False" />
+                <line number="116" hits="3" branch="False" />
+                <line number="117" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="112" hits="3" branch="False" />
+            <line number="113" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="31" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="114" hits="3" branch="False" />
+            <line number="115" hits="3" branch="False" />
+            <line number="116" hits="3" branch="False" />
+            <line number="117" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.API.Controllers.LoansController/&lt;UpdateLoan&gt;d__7" filename="CreditCardLoan.API/Controllers/LoansController.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="92" hits="2" branch="False" />
+                <line number="93" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="50" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="94" hits="1" branch="False" />
+                <line number="95" hits="1" branch="False" />
+                <line number="98" hits="1" branch="False" />
+                <line number="99" hits="1" branch="False" />
+                <line number="100" hits="1" branch="False" />
+                <line number="101" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="92" hits="2" branch="False" />
+            <line number="93" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="50" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="94" hits="1" branch="False" />
+            <line number="95" hits="1" branch="False" />
+            <line number="98" hits="1" branch="False" />
+            <line number="99" hits="1" branch="False" />
+            <line number="100" hits="1" branch="False" />
+            <line number="101" hits="2" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="CreditCardLoan.Infrastructure" line-rate="0.1953" branch-rate="0.46869999999999995" complexity="52">
+      <classes>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="1" branch-rate="0.5" complexity="4">
+          <methods>
+            <method name=".ctor" signature="(CreditCardLoan.Core.Interfaces.ILoanRepository,Microsoft.Extensions.Logging.ILogger`1&lt;CreditCardLoan.Infrastructure.Services.LoanService&gt;)" line-rate="1" branch-rate="0.5" complexity="4">
+              <lines>
+                <line number="17" hits="9" branch="False" />
+                <line number="18" hits="9" branch="False" />
+                <line number="19" hits="9" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="11" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="20" hits="9" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="33" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="21" hits="9" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="9" branch="False" />
+            <line number="18" hits="9" branch="False" />
+            <line number="19" hits="9" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="11" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="20" hits="9" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="33" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="21" hits="9" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService/&lt;&gt;c" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="0.25" branch-rate="1" complexity="4">
+          <methods>
+            <method name="&lt;GetLoanStatisticsAsync&gt;b__9_0" signature="(CreditCardLoan.Core.Models.Loan)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="65" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;GetLoanStatisticsAsync&gt;b__9_1" signature="(CreditCardLoan.Core.Models.Loan)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="66" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;GetLoanStatisticsAsync&gt;b__9_2" signature="(CreditCardLoan.Core.Models.Loan)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="67" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="&lt;ValidateLoanAsync&gt;b__10_0" signature="(System.ComponentModel.DataAnnotations.ValidationResult)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="81" hits="4" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="65" hits="0" branch="False" />
+            <line number="66" hits="0" branch="False" />
+            <line number="67" hits="0" branch="False" />
+            <line number="81" hits="4" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService/&lt;CreateLoanAsync&gt;d__5" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="3" branch="False" />
+                <line number="35" hits="3" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="34" hits="3" branch="False" />
+            <line number="35" hits="3" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService/&lt;DeleteLoanAsync&gt;d__7" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="46" hits="2" branch="False" />
+                <line number="47" hits="2" branch="False" />
+                <line number="48" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="173" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="49" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+                <line number="51" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="46" hits="2" branch="False" />
+            <line number="47" hits="2" branch="False" />
+            <line number="48" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="173" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="49" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="51" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService/&lt;GetAllLoansAsync&gt;d__3" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService/&lt;GetLoanByIdAsync&gt;d__4" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService/&lt;GetLoanStatisticsAsync&gt;d__9" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="63" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="228" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="64" hits="0" branch="False" />
+                <line number="68" hits="0" branch="False" />
+                <line number="69" hits="0" branch="False" />
+                <line number="70" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="63" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="228" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="64" hits="0" branch="False" />
+            <line number="68" hits="0" branch="False" />
+            <line number="69" hits="0" branch="False" />
+            <line number="70" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService/&lt;SearchLoansAsync&gt;d__8" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService/&lt;UpdateLoanAsync&gt;d__6" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="2" branch="False" />
+                <line number="41" hits="2" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="40" hits="2" branch="False" />
+            <line number="41" hits="2" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Services.LoanService/&lt;ValidateLoanAsync&gt;d__10" filename="CreditCardLoan.Infrastructure/Services/LoanService.cs" line-rate="0.8" branch-rate="0.6875" complexity="16">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.8" branch-rate="0.6875" complexity="16">
+              <lines>
+                <line number="73" hits="5" branch="False" />
+                <line number="74" hits="5" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="29" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="75" hits="0" branch="False" />
+                <line number="77" hits="5" branch="False" />
+                <line number="78" hits="5" branch="False" />
+                <line number="79" hits="5" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="99" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="80" hits="2" branch="False" />
+                <line number="85" hits="3" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="183" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="86" hits="0" branch="False" />
+                <line number="88" hits="3" branch="True" condition-coverage="50% (2/4)">
+                  <conditions>
+                    <condition number="217" type="jump" coverage="50%" />
+                    <condition number="249" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="89" hits="0" branch="False" />
+                <line number="91" hits="3" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="283" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="92" hits="0" branch="False" />
+                <line number="95" hits="3" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="314" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="96" hits="2" branch="False" />
+                <line number="97" hits="2" branch="False" />
+                <line number="98" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="478" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="99" hits="1" branch="False" />
+                <line number="100" hits="1" branch="False" />
+                <line number="101" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="73" hits="5" branch="False" />
+            <line number="74" hits="5" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="29" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="75" hits="0" branch="False" />
+            <line number="77" hits="5" branch="False" />
+            <line number="78" hits="5" branch="False" />
+            <line number="79" hits="5" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="99" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="80" hits="2" branch="False" />
+            <line number="85" hits="3" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="183" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="86" hits="0" branch="False" />
+            <line number="88" hits="3" branch="True" condition-coverage="50% (2/4)">
+              <conditions>
+                <condition number="217" type="jump" coverage="50%" />
+                <condition number="249" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="89" hits="0" branch="False" />
+            <line number="91" hits="3" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="283" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="92" hits="0" branch="False" />
+            <line number="95" hits="3" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="314" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="96" hits="2" branch="False" />
+            <line number="97" hits="2" branch="False" />
+            <line number="98" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="478" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="99" hits="1" branch="False" />
+            <line number="100" hits="1" branch="False" />
+            <line number="101" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Repositories.LoanRepository" filename="CreditCardLoan.Infrastructure/Repositories/LoanRepository.cs" line-rate="0" branch-rate="0" complexity="4">
+          <methods>
+            <method name=".ctor" signature="(CreditCardLoan.Infrastructure.Data.ApplicationDbContext,Microsoft.Extensions.Logging.ILogger`1&lt;CreditCardLoan.Infrastructure.Repositories.LoanRepository&gt;)" line-rate="0" branch-rate="0" complexity="4">
+              <lines>
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="11" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="21" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="33" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="22" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="11" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="21" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="33" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="22" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Repositories.LoanRepository/&lt;AddAsync&gt;d__5" filename="CreditCardLoan.Infrastructure/Repositories/LoanRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Repositories.LoanRepository/&lt;DeleteAsync&gt;d__7" filename="CreditCardLoan.Infrastructure/Repositories/LoanRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="197" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="197" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Repositories.LoanRepository/&lt;GetAllAsync&gt;d__3" filename="CreditCardLoan.Infrastructure/Repositories/LoanRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Repositories.LoanRepository/&lt;GetByIdAsync&gt;d__4" filename="CreditCardLoan.Infrastructure/Repositories/LoanRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Repositories.LoanRepository/&lt;SearchAsync&gt;d__8" filename="CreditCardLoan.Infrastructure/Repositories/LoanRepository.cs" line-rate="0" branch-rate="0" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="72" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="61" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
+                <line number="65" hits="0" branch="False" />
+                <line number="66" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="72" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="61" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
+            <line number="65" hits="0" branch="False" />
+            <line number="66" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Repositories.LoanRepository/&lt;UpdateAsync&gt;d__6" filename="CreditCardLoan.Infrastructure/Repositories/LoanRepository.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Migrations.InitialCreate" filename="CreditCardLoan.Infrastructure/Migrations/20250519154048_InitialCreate.cs" line-rate="0" branch-rate="1" complexity="2">
+          <methods>
+            <method name="Up" signature="(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="0" branch="False" />
+                <line number="15" hits="0" branch="False" />
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="Down" signature="(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="0" branch="False" />
+            <line number="15" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Migrations.InitialCreate" filename="CreditCardLoan.Infrastructure/Migrations/20250519154048_InitialCreate.Designer.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="BuildTargetModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+                <line number="61" hits="0" branch="False" />
+                <line number="63" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="61" hits="0" branch="False" />
+            <line number="63" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Migrations.ApplicationDbContextModelSnapshot" filename="CreditCardLoan.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="BuildModel" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="False" />
+                <line number="33" hits="0" branch="False" />
+                <line number="34" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="False" />
+                <line number="37" hits="0" branch="False" />
+                <line number="38" hits="0" branch="False" />
+                <line number="39" hits="0" branch="False" />
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="55" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="False" />
+            <line number="33" hits="0" branch="False" />
+            <line number="34" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="False" />
+            <line number="37" hits="0" branch="False" />
+            <line number="38" hits="0" branch="False" />
+            <line number="39" hits="0" branch="False" />
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="55" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+          </lines>
+        </class>
+        <class name="CreditCardLoan.Infrastructure.Data.ApplicationDbContext" filename="CreditCardLoan.Infrastructure/Data/ApplicationDbContext.cs" line-rate="0" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Loans" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="False" />
+                <line number="17" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="25" hits="0" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions`1&lt;CreditCardLoan.Infrastructure.Data.ApplicationDbContext&gt;)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="0" branch="False" />
+            <line number="25" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

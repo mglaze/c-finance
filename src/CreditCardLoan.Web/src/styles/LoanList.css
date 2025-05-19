@@ -1,0 +1,95 @@
+.loan-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loan-list h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.loan-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.loan-list th,
+.loan-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.loan-list th {
+  background-color: #f7fafc;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.loan-list tr:hover {
+  background-color: #f7fafc;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: #c6f6d5;
+  color: #2f855a;
+}
+
+.status-pending {
+  background-color: #fefcbf;
+  color: #975a16;
+}
+
+.status-paid {
+  background-color: #bee3f8;
+  color: #2c5282;
+}
+
+.status-defaulted {
+  background-color: #fed7d7;
+  color: #c53030;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-button {
+  background-color: #4299e1;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #3182ce;
+}
+
+.delete-button {
+  background-color: #f56565;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #e53e3e;
+} 

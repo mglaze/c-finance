@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/CreditCardLoan.API.props" />
+</Project>
