@@ -1,6 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures/test-fixture';
 import { mockApiFailure, clearMockApiFailure } from './utils/api-mock';
-import { DatabaseSeeder } from './utils/database-seeder';
 import { LoanFormPage } from './pages/LoanFormPage';
 import { DashboardPage } from './pages/DashboardPage';
 

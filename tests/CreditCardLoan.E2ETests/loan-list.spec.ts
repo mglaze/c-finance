@@ -1,6 +1,5 @@
-import { test, expect } from '@playwright/test';
+import { test, expect } from './fixtures/test-fixture';
 import { createTestLoan, deleteTestLoan, mockApiFailure, clearMockApiFailure } from './test-helpers';
-import { DatabaseSeeder } from './utils/db-seeder';
 import { DashboardPage } from './pages/DashboardPage';
 
 test.describe('Loan List', () => {
@@ -8,15 +7,9 @@ test.describe('Loan List', () => {
 
   test.beforeEach(async ({ page }) => {
     // Seed test data before each test
-    await DatabaseSeeder.seedTestData();
     dashboardPage = new DashboardPage(page);
     await dashboardPage.navigate();
     await dashboardPage.waitForLoad();
-  });
-
-  test.afterEach(async () => {
-    // Clean up test data after each test
-    await DatabaseSeeder.clearTestData();
   });
 
   test('displays loan details correctly', async ({ page }) => {

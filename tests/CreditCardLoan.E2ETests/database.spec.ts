@@ -1,5 +1,4 @@
 import { test, expect } from './fixtures/test-fixture';
-import { DatabaseSeeder } from './utils/db-seeder';
 
 test.describe('Database Seeding', () => {
   test('verifies test data is seeded correctly', async ({ page }) => {

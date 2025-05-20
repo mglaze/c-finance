@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detailed Test Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        summary {
+            cursor: pointer;
+            font-size: 1.1em;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Detailed Test Results</h1>
+    
+    <details>
+        <summary><strong>CreditCardLoan.UnitTests.Services.LoanServiceTests</strong> - 9 test(s)</summary>
+        <table border="1" cellpadding="5" cellspacing="0" style="margin: 10px 0; border-collapse: collapse;">
+            <tr style="background-color: #f0f0f0;"><th>Test Name</th><th>Outcome</th><th>Duration</th></tr>
+    
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Services.LoanServiceTests.UpdateLoanAsync_WithValidLoan_UpdatesLoan</td>
+                <td>Passed</td>
+                <td>00:00:00.0337676</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Services.LoanServiceTests.CreateLoanAsync_WithValidLoan_CreatesAndReturnsLoan</td>
+                <td>Passed</td>
+                <td>00:00:00.0050023</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Services.LoanServiceTests.UpdateLoanAsync_WithNonExistentLoan_ThrowsValidationException</td>
+                <td>Passed</td>
+                <td>00:00:00.0030492</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Services.LoanServiceTests.GetAllLoansAsync_ReturnsAllLoans</td>
+                <td>Passed</td>
+                <td>00:00:00.0065996</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Services.LoanServiceTests.CreateLoanAsync_WithInvalidAmount_ThrowsValidationException</td>
+                <td>Passed</td>
+                <td>00:00:00.0025458</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Services.LoanServiceTests.DeleteLoanAsync_WithValidId_DeletesLoan</td>
+                <td>Passed</td>
+                <td>00:00:00.0043943</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Services.LoanServiceTests.CreateLoanAsync_WithInvalidInterestRate_ThrowsValidationException</td>
+                <td>Passed</td>
+                <td>00:00:00.2037142</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Services.LoanServiceTests.GetLoanByIdAsync_WithValidId_ReturnsLoan</td>
+                <td>Passed</td>
+                <td>00:00:00.0029985</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Services.LoanServiceTests.DeleteLoanAsync_WithNonExistentId_ThrowsValidationException</td>
+                <td>Passed</td>
+                <td>00:00:00.0027521</td>
+            </tr>
+        </table></details>
+    <details>
+        <summary><strong>CreditCardLoan.UnitTests.Controllers.LoansControllerTests</strong> - 7 test(s)</summary>
+        <table border="1" cellpadding="5" cellspacing="0" style="margin: 10px 0; border-collapse: collapse;">
+            <tr style="background-color: #f0f0f0;"><th>Test Name</th><th>Outcome</th><th>Duration</th></tr>
+    
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Controllers.LoansControllerTests.UpdateLoan_WithMismatchedId_ReturnsBadRequest</td>
+                <td>Passed</td>
+                <td>00:00:00.0056334</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Controllers.LoansControllerTests.GetLoan_WithValidId_ReturnsOkResult_WithLoan</td>
+                <td>Passed</td>
+                <td>00:00:00.0024174</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Controllers.LoansControllerTests.GetLoan_WithInvalidId_ReturnsNotFound</td>
+                <td>Passed</td>
+                <td>00:00:00.0063634</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Controllers.LoansControllerTests.GetLoans_ReturnsOkResult_WithListOfLoans</td>
+                <td>Passed</td>
+                <td>00:00:00.1164172</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Controllers.LoansControllerTests.DeleteLoan_WithValidId_ReturnsNoContent</td>
+                <td>Passed</td>
+                <td>00:00:00.1939824</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Controllers.LoansControllerTests.UpdateLoan_WithValidLoan_ReturnsNoContent</td>
+                <td>Passed</td>
+                <td>00:00:00.0168512</td>
+            </tr>
+        
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.Controllers.LoansControllerTests.CreateLoan_WithValidLoan_ReturnsCreatedAtAction</td>
+                <td>Passed</td>
+                <td>00:00:00.0112720</td>
+            </tr>
+        </table></details>
+    <details>
+        <summary><strong>CreditCardLoan.UnitTests.UnitTest1</strong> - 1 test(s)</summary>
+        <table border="1" cellpadding="5" cellspacing="0" style="margin: 10px 0; border-collapse: collapse;">
+            <tr style="background-color: #f0f0f0;"><th>Test Name</th><th>Outcome</th><th>Duration</th></tr>
+    
+            <tr style="background-color: #c8e6c9;">
+                <td>CreditCardLoan.UnitTests.UnitTest1.Test1</td>
+                <td>Passed</td>
+                <td>00:00:00.0079098</td>
+            </tr>
+        </table></details>
+</body>
+</html>

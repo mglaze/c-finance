@@ -1,5 +1,4 @@
-import { test, expect } from '@playwright/test';
-import { DatabaseSeeder } from './utils/db-seeder';
+import { test, expect } from './fixtures/test-fixture';
 import { DashboardPage } from './pages/DashboardPage';
 
 test.describe('Dashboard', () => {
@@ -7,15 +6,10 @@ test.describe('Dashboard', () => {
 
   test.beforeEach(async ({ page }) => {
     // Seed test data before each test
-    await DatabaseSeeder.seedTestData();
+
     dashboardPage = new DashboardPage(page);
     await dashboardPage.navigate();
     await dashboardPage.waitForLoad();
-  });
-
-  test.afterEach(async () => {
-    // Clean up test data after each test
-    await DatabaseSeeder.clearTestData();
   });
 
   test('displays loan statistics', async () => {
