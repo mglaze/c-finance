@@ -1,5 +1,5 @@
 import React from 'react';
-import { Loan } from '../types/Loan';
+import { Loan, LoanStatus } from '../types/Loan';
 import '../styles/LoanStats.css';
 
 interface LoanStatsProps {
@@ -9,10 +9,12 @@ interface LoanStatsProps {
 const LoanStats: React.FC<LoanStatsProps> = ({ loans }) => {
   const totalLoans = loans.length;
   const totalAmount = loans.reduce((sum, loan) => sum + loan.amount, 0);
-  const activeLoans = loans.filter(loan => loan.status === 'Active').length;
-  const pendingLoans = loans.filter(loan => loan.status === 'Pending').length;
-  const paidLoans = loans.filter(loan => loan.status === 'Paid').length;
-  const defaultedLoans = loans.filter(loan => loan.status === 'Defaulted').length;
+  const activeLoansAmount = loans
+    .filter(loan => loan.status === LoanStatus.Active)
+    .reduce((sum, loan) => sum + loan.amount, 0);
+  const pendingLoans = loans.filter(loan => loan.status === LoanStatus.Pending).length;
+  const paidLoans = loans.filter(loan => loan.status === LoanStatus.Paid).length;
+  const defaultedLoans = loans.filter(loan => loan.status === LoanStatus.Defaulted).length;
   const averageInterestRate = loans.length > 0
     ? loans.reduce((sum, loan) => sum + loan.interestRate, 0) / loans.length
     : 0;
@@ -28,39 +30,39 @@ const LoanStats: React.FC<LoanStatsProps> = ({ loans }) => {
     <div className="loan-stats">
       <h2>Loan Statistics</h2>
       <div className="stats-grid">
-        <div className="stat-card">
+        <div className="stat-card" data-testid="stats-total-loans">
           <h3>Total Loans</h3>
-          <p className="stat-value">{totalLoans}</p>
+          <p className="stat-value" data-testid="stats-total-loans-value">{totalLoans}</p>
         </div>
         
-        <div className="stat-card">
+        <div className="stat-card" data-testid="stats-total-amount">
           <h3>Total Amount</h3>
-          <p className="stat-value">{formatCurrency(totalAmount)}</p>
+          <p className="stat-value" data-testid="stats-total-amount-value">{formatCurrency(totalAmount)}</p>
         </div>
         
-        <div className="stat-card">
+        <div className="stat-card" data-testid="stats-active-loans">
           <h3>Active Loans</h3>
-          <p className="stat-value">{activeLoans}</p>
+          <p className="stat-value" data-testid="stats-active-loans-value">{formatCurrency(activeLoansAmount)}</p>
         </div>
         
-        <div className="stat-card">
+        <div className="stat-card" data-testid="stats-pending-loans">
           <h3>Pending Loans</h3>
-          <p className="stat-value">{pendingLoans}</p>
+          <p className="stat-value" data-testid="stats-pending-loans-value">{pendingLoans}</p>
         </div>
         
-        <div className="stat-card">
+        <div className="stat-card" data-testid="stats-paid-loans">
           <h3>Paid Loans</h3>
-          <p className="stat-value">{paidLoans}</p>
+          <p className="stat-value" data-testid="stats-paid-loans-value">{paidLoans}</p>
         </div>
         
-        <div className="stat-card">
+        <div className="stat-card" data-testid="stats-defaulted-loans">
           <h3>Defaulted Loans</h3>
-          <p className="stat-value">{defaultedLoans}</p>
+          <p className="stat-value" data-testid="stats-defaulted-loans-value">{defaultedLoans}</p>
         </div>
         
-        <div className="stat-card">
+        <div className="stat-card" data-testid="stats-avg-interest">
           <h3>Average Interest Rate</h3>
-          <p className="stat-value">{averageInterestRate.toFixed(2)}%</p>
+          <p className="stat-value" data-testid="stats-avg-interest-value">{averageInterestRate.toFixed(2)}%</p>
         </div>
       </div>
     </div>

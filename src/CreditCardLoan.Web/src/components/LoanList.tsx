@@ -1,5 +1,5 @@
 import React from 'react';
-import { Loan } from '../types/Loan';
+import { Loan, LoanStatus } from '../types/Loan';
 import '../styles/LoanList.css';
 
 interface LoanListProps {
@@ -20,20 +20,35 @@ const LoanList: React.FC<LoanListProps> = ({ loans, onUpdate, onDelete }) => {
     return new Date(date).toLocaleDateString();
   };
 
-  const getStatusClass = (status: string) => {
-    switch (status.toLowerCase()) {
-      case 'active':
-        return 'status-active';
-      case 'pending':
-        return 'status-pending';
-      case 'paid':
-        return 'status-paid';
-      case 'defaulted':
-        return 'status-defaulted';
+  function getStatusText(status: number): string {
+    switch (status) {
+      case LoanStatus.Active:
+        return 'Active';
+      case LoanStatus.Pending:
+        return 'Pending';
+      case LoanStatus.Paid:
+        return 'Paid';
+      case LoanStatus.Defaulted:
+        return 'Defaulted';
       default:
-        return '';
+        return 'Unknown';
     }
-  };
+  }
+
+  function getStatusClass(status: number) {
+    switch (status) {
+      case LoanStatus.Active:
+        return 'loan-status-active';
+      case LoanStatus.Pending:
+        return 'loan-status-pending';
+      case LoanStatus.Paid:
+        return 'loan-status-paid';
+      case LoanStatus.Defaulted:
+        return 'loan-status-defaulted';
+      default:
+        return 'loan-status-unknown';
+    }
+  }
 
   return (
     <div className="loan-list">
@@ -52,15 +67,15 @@ const LoanList: React.FC<LoanListProps> = ({ loans, onUpdate, onDelete }) => {
         </thead>
         <tbody>
           {loans.map(loan => (
-            <tr key={loan.id}>
-              <td>{loan.accountNumber}</td>
-              <td>{formatCurrency(loan.amount)}</td>
-              <td>{loan.interestRate}%</td>
-              <td>{loan.termInMonths} months</td>
-              <td>{formatCurrency(loan.monthlyPayment)}</td>
+            <tr key={loan.id} data-testid={`loan-item-${loan.customerName}`}>
+              <td data-testid="account-number">{loan.customerName}</td>
+              <td data-testid="amount">{formatCurrency(loan.amount)}</td>
+              <td data-testid="interest-rate">{loan.interestRate}%</td>
+              <td data-testid="term">{loan.termInMonths} months</td>
+              <td data-testid="monthly-payment">{formatCurrency(loan.monthlyPayment)}</td>
               <td>
-                <span className={`status-badge ${getStatusClass(loan.status)}`}>
-                  {loan.status}
+                <span className={getStatusClass(loan.status)}>
+                  {getStatusText(loan.status)}
                 </span>
               </td>
               <td>
@@ -68,12 +83,14 @@ const LoanList: React.FC<LoanListProps> = ({ loans, onUpdate, onDelete }) => {
                   <button
                     className="edit-button"
                     onClick={() => onUpdate(loan)}
+                    data-testid="edit-button"
                   >
                     Edit
                   </button>
                   <button
                     className="delete-button"
                     onClick={() => onDelete(loan.id)}
+                    data-testid="delete-button"
                   >
                     Delete
                   </button>

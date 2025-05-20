@@ -113,3 +113,4 @@
 /Users/michaela/Sites/interview/curae/src/CreditCardLoan.API/obj/Debug/net9.0/CreditCardLoan.API.pdb
 /Users/michaela/Sites/interview/curae/src/CreditCardLoan.API/obj/Debug/net9.0/CreditCardLoan.API.genruntimeconfig.cache
 /Users/michaela/Sites/interview/curae/src/CreditCardLoan.API/obj/Debug/net9.0/ref/CreditCardLoan.API.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.API/obj/Debug/net9.0/CreditCardLoan.API.sourcelink.json

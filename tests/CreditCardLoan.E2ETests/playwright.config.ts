@@ -3,6 +3,7 @@ import { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
   testDir: './',
   timeout: 30000,
+  workers: 8,
   expect: {
     timeout: 5000
   },

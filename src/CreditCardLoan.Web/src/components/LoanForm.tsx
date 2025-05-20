@@ -46,8 +46,11 @@ const LoanForm: React.FC<LoanFormProps> = ({ onSubmit, selectedLoan, onCancel })
     onSubmit(formData as Loan);
   };
 
+  const formType = selectedLoan ? 'edit' : 'create';
+  const formTestId = `loan-form-${formType}`;
+
   return (
-    <div className="loan-form">
+    <div className="loan-form" data-testid={formTestId}>
       <h2>{selectedLoan ? 'Edit Loan' : 'Create New Loan'}</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -59,6 +62,7 @@ const LoanForm: React.FC<LoanFormProps> = ({ onSubmit, selectedLoan, onCancel })
             value={formData.accountNumber}
             onChange={handleChange}
             required
+            data-testid={`account-number-input-${formType}`}
           />
         </div>
 
@@ -73,6 +77,7 @@ const LoanForm: React.FC<LoanFormProps> = ({ onSubmit, selectedLoan, onCancel })
             min="0"
             step="0.01"
             required
+            data-testid={`amount-input-${formType}`}
           />
         </div>
 
@@ -88,6 +93,7 @@ const LoanForm: React.FC<LoanFormProps> = ({ onSubmit, selectedLoan, onCancel })
             max="100"
             step="0.01"
             required
+            data-testid={`interest-rate-input-${formType}`}
           />
         </div>
 
@@ -102,6 +108,7 @@ const LoanForm: React.FC<LoanFormProps> = ({ onSubmit, selectedLoan, onCancel })
             min="1"
             max="360"
             required
+            data-testid={`term-input-${formType}`}
           />
         </div>
 
@@ -113,6 +120,7 @@ const LoanForm: React.FC<LoanFormProps> = ({ onSubmit, selectedLoan, onCancel })
             value={formData.status}
             onChange={handleChange}
             required
+            data-testid={`status-select-${formType}`}
           >
             <option value="Pending">Pending</option>
             <option value="Active">Active</option>
@@ -122,10 +130,19 @@ const LoanForm: React.FC<LoanFormProps> = ({ onSubmit, selectedLoan, onCancel })
         </div>
 
         <div className="form-actions">
-          <button type="submit" className="submit-button">
+          <button 
+            type="submit" 
+            className="submit-button"
+            data-testid={`submit-button-${formType}`}
+          >
             {selectedLoan ? 'Update Loan' : 'Create Loan'}
           </button>
-          <button type="button" className="cancel-button" onClick={onCancel}>
+          <button 
+            type="button" 
+            className="cancel-button" 
+            onClick={onCancel}
+            data-testid={`cancel-button-${formType}`}
+          >
             Cancel
           </button>
         </div>

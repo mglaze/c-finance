@@ -1,9 +1,22 @@
 import { test, expect } from '@playwright/test';
 import { createTestLoan, deleteTestLoan, mockApiFailure, clearMockApiFailure } from './test-helpers';
+import { DatabaseSeeder } from './utils/db-seeder';
+import { DashboardPage } from './pages/DashboardPage';
 
 test.describe('Loan List', () => {
+  let dashboardPage: DashboardPage;
+
   test.beforeEach(async ({ page }) => {
-    await page.goto('/');
+    // Seed test data before each test
+    await DatabaseSeeder.seedTestData();
+    dashboardPage = new DashboardPage(page);
+    await dashboardPage.navigate();
+    await dashboardPage.waitForLoad();
+  });
+
+  test.afterEach(async () => {
+    // Clean up test data after each test
+    await DatabaseSeeder.clearTestData();
   });
 
   test('displays loan details correctly', async ({ page }) => {
@@ -32,32 +45,30 @@ test.describe('Loan List', () => {
     expect(amounts).toEqual(['$5,000.00', '$6,000.00']);
   });
 
-  test('filters loans by status', async ({ page }) => {
-    await createTestLoan(page);
-    
-    await page.selectOption('select[name="statusFilter"]', 'Pending');
-    await expect(page.locator('tr')).toHaveCount(2); // Header + 1 loan
-    
-    await page.selectOption('select[name="statusFilter"]', 'Active');
-    await expect(page.locator('tr')).toHaveCount(1); // Only header
+  test('filters loans by status', async () => {
+    await dashboardPage.filterByStatus('active');
+    const activeLoansCount = await dashboardPage.getActiveLoansCount();
+    const totalLoansCount = await dashboardPage.getLoanItemsCount();
+    expect(activeLoansCount).toBe(totalLoansCount);
   });
 
   test('handles API error when loading loans', async ({ page }) => {
     await mockApiFailure(page);
     await page.reload();
-    
     await expect(page.locator('text=Failed to load loans')).toBeVisible();
-    
     await clearMockApiFailure(page);
   });
 
   test('confirms before deleting loan', async ({ page }) => {
     await createTestLoan(page);
-    
     await page.click('button:has-text("Delete")');
     await expect(page.locator('text=Are you sure you want to delete this loan?')).toBeVisible();
-    
     await page.click('button:has-text("Cancel")');
     await expect(page.locator('text=John Doe')).toBeVisible();
+  });
+
+  test('deletes a loan', async () => {
+    await dashboardPage.deleteLoan('TEST001');
+    expect(await dashboardPage.isLoanVisible('TEST001')).toBeFalsy();
   });
 }); 

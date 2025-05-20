@@ -1,59 +1,118 @@
 import { test, expect } from '@playwright/test';
-import { mockApiFailure, clearMockApiFailure } from './test-helpers';
+import { mockApiFailure, clearMockApiFailure } from './utils/api-mock';
+import { DatabaseSeeder } from './utils/database-seeder';
+import { LoanFormPage } from './pages/LoanFormPage';
+import { DashboardPage } from './pages/DashboardPage';
 
 test.describe('Loan Form', () => {
+  let loanFormPage: LoanFormPage;
+  let dashboardPage: DashboardPage;
+
   test.beforeEach(async ({ page }) => {
-    await page.goto('/');
-    await page.click('button:has-text("New Loan")');
+    loanFormPage = new LoanFormPage(page, 'create');
+    dashboardPage = new DashboardPage(page);
+    await dashboardPage.navigate();
+    await dashboardPage.clickNewLoan();
+    await loanFormPage.waitForLoad();
   });
 
-  test('validates amount field', async ({ page }) => {
-    await page.fill('input[name="customerName"]', 'John Doe');
-    await page.fill('input[name="amount"]', '-1000');
-    await page.fill('input[name="interestRate"]', '5.5');
-    await page.fill('input[name="termMonths"]', '12');
-    await page.click('button:has-text("Create")');
+  test('validates form inputs', async () => {
+    // Test amount validation
+    await loanFormPage.fillForm({
+      accountNumber: 'TEST001',
+      amount: -1000,
+      interestRate: 5,
+      termInMonths: 12,
+      status: 'Active'
+    });
+    await loanFormPage.submit();
+    expect(await loanFormPage.getAmountError()).toBe('Amount must be greater than 0');
 
-    await expect(page.locator('text=Amount must be greater than 0')).toBeVisible();
+    // Test interest rate validation
+    await loanFormPage.fillForm({
+      accountNumber: 'TEST001',
+      amount: 1000,
+      interestRate: 101,
+      termInMonths: 12,
+      status: 'Active'
+    });
+    await loanFormPage.submit();
+    expect(await loanFormPage.getInterestRateError()).toBe('Interest rate must be between 0 and 100');
+
+    // Test term validation
+    await loanFormPage.fillForm({
+      accountNumber: 'TEST001',
+      amount: 1000,
+      interestRate: 5,
+      termInMonths: 0,
+      status: 'Active'
+    });
+    await loanFormPage.submit();
+    expect(await loanFormPage.getTermError()).toBe('Term must be between 1 and 360 months');
   });
 
-  test('validates interest rate field', async ({ page }) => {
-    await page.fill('input[name="customerName"]', 'John Doe');
-    await page.fill('input[name="amount"]', '5000');
-    await page.fill('input[name="interestRate"]', '101');
-    await page.fill('input[name="termMonths"]', '12');
-    await page.click('button:has-text("Create")');
-
-    await expect(page.locator('text=Interest rate must be between 0 and 100')).toBeVisible();
+  test('handles API errors', async () => {
+    await mockApiFailure('POST', '/api/loans');
+    
+    await loanFormPage.fillForm({
+      accountNumber: 'TEST001',
+      amount: 1000,
+      interestRate: 5,
+      termInMonths: 12,
+      status: 'Active'
+    });
+    await loanFormPage.submit();
+    
+    await expect(page.getByText('Failed to save loan')).toBeVisible();
+    await clearMockApiFailure();
   });
 
-  test('validates term months field', async ({ page }) => {
-    await page.fill('input[name="customerName"]', 'John Doe');
-    await page.fill('input[name="amount"]', '5000');
-    await page.fill('input[name="interestRate"]', '5.5');
-    await page.fill('input[name="termMonths"]', '0');
-    await page.click('button:has-text("Create")');
-
-    await expect(page.locator('text=Term must be greater than 0')).toBeVisible();
+  test('closes form on cancel', async () => {
+    await loanFormPage.cancel();
+    await expect(loanFormPage.form).not.toBeVisible();
   });
 
-  test('handles API error gracefully', async ({ page }) => {
-    await mockApiFailure(page);
-
-    await page.fill('input[name="customerName"]', 'John Doe');
-    await page.fill('input[name="amount"]', '5000');
-    await page.fill('input[name="interestRate"]', '5.5');
-    await page.fill('input[name="termMonths"]', '12');
-    await page.click('button:has-text("Create")');
-
-    await expect(page.locator('text=Failed to create loan')).toBeVisible();
-    await expect(page.locator('form')).toBeVisible();
-
-    await clearMockApiFailure(page);
+  test('creates a new loan', async () => {
+    await loanFormPage.fillForm({
+      accountNumber: 'TEST001',
+      amount: 1000,
+      interestRate: 5,
+      termInMonths: 12,
+      status: 'Active'
+    });
+    await loanFormPage.submit();
+    
+    await expect(loanFormPage.form).not.toBeVisible();
+    await expect(dashboardPage.getLoanItem('TEST001')).toBeVisible();
   });
 
-  test('closes form on cancel', async ({ page }) => {
-    await page.click('button:has-text("Cancel")');
-    await expect(page.locator('form')).not.toBeVisible();
+  test('edits an existing loan', async () => {
+    // First create a loan
+    await loanFormPage.fillForm({
+      accountNumber: 'TEST001',
+      amount: 1000,
+      interestRate: 5,
+      termInMonths: 12,
+      status: 'Active'
+    });
+    await loanFormPage.submit();
+
+    // Then edit it
+    await dashboardPage.clickEditLoan('TEST001');
+    const editFormPage = new LoanFormPage(page, 'edit');
+    await editFormPage.waitForLoad();
+    
+    await editFormPage.fillForm({
+      accountNumber: 'TEST001',
+      amount: 2000,
+      interestRate: 5,
+      termInMonths: 12,
+      status: 'Active'
+    });
+    await editFormPage.submit();
+
+    // Verify the loan was updated
+    const loanItem = await dashboardPage.getLoanItem('TEST001');
+    await expect(loanItem.getByTestId('amount')).toHaveText('$2,000.00');
   });
 }); 

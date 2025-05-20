@@ -15,3 +15,4 @@
 /Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/ref/CreditCardLoan.Infrastructure.dll
 /Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/bin/Debug/net9.0/CreditCardLoan.Infrastructure.runtimeconfig.json
 /Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.genruntimeconfig.cache
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Infrastructure/obj/Debug/net9.0/CreditCardLoan.Infrastructure.sourcelink.json

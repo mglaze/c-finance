@@ -67,12 +67,12 @@ const Dashboard: React.FC = () => {
   }
 
   return (
-    <div className="dashboard">
+    <div className="dashboard" data-testid="dashboard">
       <div className="dashboard-header">
         <h1>Loan Management Dashboard</h1>
       </div>
       <div className="dashboard-content">
-        <div className="dashboard-stats">
+        <div className="dashboard-stats" data-testid="loan-stats">
           <LoanStats loans={loans} />
         </div>
         <div className="dashboard-form">
@@ -82,7 +82,7 @@ const Dashboard: React.FC = () => {
             onCancel={() => setSelectedLoan(null)}
           />
         </div>
-        <div className="dashboard-list">
+        <div className="dashboard-list" data-testid="loan-list">
           <LoanList
             loans={loans}
             onUpdate={setSelectedLoan}

@@ -27,6 +27,9 @@ namespace CreditCardLoan.Core.Models
 
         public DateTime? UpdatedAt { get; set; }
 
+        [Required]
+        public LoanStatus Status { get; set; } = LoanStatus.Pending;
+
         public decimal MonthlyPayment => CalculateMonthlyPayment();
 
         public decimal TotalPayment => MonthlyPayment * TermInMonths;

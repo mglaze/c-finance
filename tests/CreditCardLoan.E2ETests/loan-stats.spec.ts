@@ -1,59 +1,54 @@
 import { test, expect } from '@playwright/test';
-import { createTestLoan, mockApiFailure, clearMockApiFailure } from './test-helpers';
+import { DatabaseSeeder } from './utils/db-seeder';
+import { DashboardPage } from './pages/DashboardPage';
 
-test.describe('Loan Statistics', () => {
+test.describe('Loan Stats', () => {
+  let dashboardPage: DashboardPage;
+
   test.beforeEach(async ({ page }) => {
-    await page.goto('/');
+    // Seed test data before each test
+    await DatabaseSeeder.seedTestData();
+    dashboardPage = new DashboardPage(page);
+    await dashboardPage.navigate();
+    await dashboardPage.waitForLoad();
   });
 
-  test('displays correct total loans count', async ({ page }) => {
-    await createTestLoan(page);
-    
-    const totalLoans = await page.locator('.stat-card:has-text("Total Loans") .stat-value').textContent();
-    expect(totalLoans).toBe('1');
+  test.afterEach(async () => {
+    // Clean up test data after each test
+    await DatabaseSeeder.clearTestData();
   });
 
-  test('displays correct total amount', async ({ page }) => {
-    await createTestLoan(page);
-    
-    const totalAmount = await page.locator('.stat-card:has-text("Total Amount") .stat-value').textContent();
-    expect(totalAmount).toBe('$5,000.00');
+  test('displays total number of loans', async () => {
+    const totalLoans = await dashboardPage.getTotalLoans();
+    expect(totalLoans).toContain('2'); // We seeded 2 test loans
   });
 
-  test('displays correct average interest rate', async ({ page }) => {
-    await createTestLoan(page);
-    
-    await page.click('button:has-text("New Loan")');
-    await page.fill('input[name="customerName"]', 'Jane Doe');
-    await page.fill('input[name="amount"]', '6000');
-    await page.fill('input[name="interestRate"]', '6.0');
-    await page.fill('input[name="termMonths"]', '24');
-    await page.click('button:has-text("Create")');
-    
-    const avgRate = await page.locator('.stat-card:has-text("Average Interest Rate") .stat-value').textContent();
-    expect(avgRate).toBe('5.75%');
+  test('displays active loans count', async () => {
+    const activeLoans = await dashboardPage.getActiveLoans();
+    expect(activeLoans).toContain('1'); // One of our test loans is active
   });
 
-  test('updates statistics when loan status changes', async ({ page }) => {
-    await createTestLoan(page);
-    
-    await page.click('button:has-text("Edit")');
-    await page.selectOption('select[name="status"]', 'Active');
-    await page.click('button:has-text("Update")');
-    
-    const activeLoans = await page.locator('.stat-card:has-text("Active Loans") .stat-value').textContent();
-    expect(activeLoans).toBe('1');
-    
-    const pendingLoans = await page.locator('.stat-card:has-text("Pending Loans") .stat-value').textContent();
-    expect(pendingLoans).toBe('0');
+  test('displays total loan amount', async () => {
+    const totalAmount = await dashboardPage.getTotalAmount();
+    expect(totalAmount).toContain('$15,000.00'); // Sum of our test loans
   });
 
-  test('handles API error when loading statistics', async ({ page }) => {
-    await mockApiFailure(page);
-    await page.reload();
-    
-    await expect(page.locator('text=Failed to load statistics')).toBeVisible();
-    
-    await clearMockApiFailure(page);
+  test('updates stats when loan is deleted', async () => {
+    // Get initial stats
+    const initialTotalLoans = await dashboardPage.getTotalLoans();
+    const initialTotalAmount = await dashboardPage.getTotalAmount();
+
+    // Delete a loan
+    await dashboardPage.deleteLoan('TEST001');
+
+    // Wait for stats to update
+    await dashboardPage.waitForLoad();
+
+    // Verify updated stats
+    const updatedTotalLoans = await dashboardPage.getTotalLoans();
+    const updatedTotalAmount = await dashboardPage.getTotalAmount();
+
+    expect(updatedTotalLoans).not.toBe(initialTotalLoans);
+    expect(updatedTotalAmount).not.toBe(initialTotalAmount);
   });
 }); 

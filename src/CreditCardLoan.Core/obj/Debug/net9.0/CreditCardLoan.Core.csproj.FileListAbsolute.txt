@@ -9,3 +9,4 @@
 /Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/refint/CreditCardLoan.Core.dll
 /Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/CreditCardLoan.Core.pdb
 /Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/ref/CreditCardLoan.Core.dll
+/Users/michaela/Sites/interview/curae/src/CreditCardLoan.Core/obj/Debug/net9.0/CreditCardLoan.Core.sourcelink.json
